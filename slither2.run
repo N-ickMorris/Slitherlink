@@ -1,0 +1,9 @@
+reset;
+model slither.mod;
+data slither2.dat;
+option solver cplex;
+option cplex_options 'mipdisplay = 2';
+solve;
+option omit_zero_rows 1;
+option display_1col 1000;
+display x;
